@@ -1,0 +1,18 @@
+9264: 11:51:45.073 - ---
+9264: 11:51:45.073 - Service: "Photon Socket Server" starting
+9264: 11:51:45.073 - Config File: C:\Users\Administrator\Desktop\GraduationProject\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+9264: 11:51:45.075 - Will produce at most: 10 crash dumps
+9264: 11:51:45.075 - Service shutting down
+9264: 11:51:45.076 - Service shut down complete
+2792: 11:55:47.511 - ---
+2792: 11:55:47.511 - Service: "Photon Socket Server" starting
+2792: 11:55:47.511 - Config File: C:\Users\Administrator\Desktop\GraduationProject\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+2792: 11:55:47.511 - Will produce at most: 10 crash dumps
+2792: 11:55:47.511 - Service shutting down
+2792: 11:55:47.511 - Service shut down complete
+3316: 12:49:25.938 - ---
+3316: 12:49:25.938 - Service: "Photon Socket Server" starting
+3316: 12:49:25.938 - Config File: C:\Users\Administrator\Desktop\GraduationProject\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+3316: 12:49:25.941 - Will produce at most: 10 crash dumps
+3316: 12:49:25.941 - Service shutting down
+3316: 12:49:25.943 - Service shut down complete
