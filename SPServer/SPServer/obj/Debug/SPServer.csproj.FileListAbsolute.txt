@@ -18,3 +18,9 @@ C:\Users\Administrator\Desktop\GraduationProject\SPServer\SPServer\obj\Debug\SPS
 C:\Users\Administrator\Desktop\GraduationProject\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\SP\bin\log4net.config
 C:\Users\Administrator\Desktop\GraduationProject\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\SP\bin\SPServer.dll
 C:\Users\Administrator\Desktop\GraduationProject\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\SP\bin\SPServer.pdb
+C:\Users\Administrator\Desktop\GraduationProject\Git\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\SP\bin\log4net.config
+C:\Users\Administrator\Desktop\GraduationProject\Git\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\SP\bin\SPServer.dll
+C:\Users\Administrator\Desktop\GraduationProject\Git\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\SP\bin\SPServer.pdb
+C:\Users\Administrator\Desktop\GraduationProject\Git\SPServer\SPServer\obj\Debug\SPServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GraduationProject\Git\SPServer\SPServer\obj\Debug\SPServer.dll
+C:\Users\Administrator\Desktop\GraduationProject\Git\SPServer\SPServer\obj\Debug\SPServer.pdb

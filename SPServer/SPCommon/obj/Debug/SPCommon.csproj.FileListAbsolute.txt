@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\GraduationProject\Git\SpritePossession\Assets\Plugins\SPCommon.dll
+C:\Users\Administrator\Desktop\GraduationProject\Git\SpritePossession\Assets\Plugins\SPCommon.pdb
+C:\Users\Administrator\Desktop\GraduationProject\Git\SPServer\SPCommon\obj\Debug\SPCommon.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GraduationProject\Git\SPServer\SPCommon\obj\Debug\SPCommon.dll
+C:\Users\Administrator\Desktop\GraduationProject\Git\SPServer\SPCommon\obj\Debug\SPCommon.pdb

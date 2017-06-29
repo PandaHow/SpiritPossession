@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SPCommon.Code
 {
-    class OpCode
+    //操作码
+    public class OpCode
     {
+        //账号
+        public const byte AccountCode = 0;
     }
 }
