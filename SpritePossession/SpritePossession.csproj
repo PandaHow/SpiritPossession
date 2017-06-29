@@ -88,17 +88,18 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SPCommon">
-      <HintPath>Assets\Plugins\SPCommon.dll</HintPath>
+    <Reference Include="LitJson">
+      <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>Assets\Plugins\Photon3Unity3D.dll</HintPath>
     </Reference>
-    <Reference Include="LitJson">
-      <HintPath>Assets\Plugins\LitJson.dll</HintPath>
+    <Reference Include="SPCommon">
+      <HintPath>Assets\Plugins\SPCommon.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\GameTest\SpriteOutline.cs" />
     <Compile Include="Assets\Scripts\AccountView.cs" />
     <Compile Include="Assets\Scripts\Managers\Log.cs" />
     <Compile Include="Assets\Scripts\Managers\PhotonManager.cs" />
