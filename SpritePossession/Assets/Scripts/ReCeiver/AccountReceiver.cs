@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using UnityEngine;
 using SPCommon.Code;
+using UnityEngine.UI;
 
 public class AccountReceiver : MonoBehaviour, IReceiver
 {
     [SerializeField]
     private AccountView view;
+    [SerializeField]
+    private GameObject UIAccount;
+    [SerializeField]
+    private GameObject UIMain;
 
     public void OnReceive(byte subCode, OperationResponse response)
     {
@@ -32,6 +37,9 @@ public class AccountReceiver : MonoBehaviour, IReceiver
         {
             case 0:
                 //成功 进入下一个UI
+                ShowUI(UIMain);
+                HideUI(UIAccount);
+                PhotonManager.Instance.Request(OpCode.PlayerCode, OpPlayer.GetInfo);
                 break;
             case -1:
                 //失败 玩家在线
@@ -66,5 +74,29 @@ public class AccountReceiver : MonoBehaviour, IReceiver
                 break;
         }
     }
+
+    #region 处理UI显示与隐藏的函数（就是UIBase.cs里面的onshow和onhide（））
+
+    private void ShowUI(GameObject ob)
+    {
+        if (ob.GetComponent<CanvasGroup>())
+        {
+            ob.GetComponent<CanvasGroup>().alpha = 1;
+            ob.GetComponent<CanvasGroup>().interactable = true;
+            ob.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        }
+    }
+
+    private void HideUI(GameObject ob)
+    {
+        if (ob.GetComponent<CanvasGroup>())
+        {
+            ob.GetComponent<CanvasGroup>().alpha = 0;
+            ob.GetComponent<CanvasGroup>().interactable = false;
+            ob.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        }
+    }
+
+    #endregion
 }
 

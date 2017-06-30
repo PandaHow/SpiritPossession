@@ -10,5 +10,8 @@ namespace SPCommon.Code
     {
         //账号
         public const byte AccountCode = 0;
+
+        //玩家
+        public const byte PlayerCode = 1;
     }
 }

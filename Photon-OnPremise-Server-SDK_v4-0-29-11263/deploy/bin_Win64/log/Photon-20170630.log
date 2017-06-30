@@ -1,0 +1,12 @@
+9316: 10:31:16.141 - ---
+9316: 10:31:16.141 - Service: "Photon Socket Server" starting
+9316: 10:31:16.141 - Config File: C:\Users\Administrator\Desktop\GraduationProject\Git\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+9316: 10:31:16.146 - Will produce at most: 10 crash dumps
+9316: 10:31:16.146 - Service shutting down
+9316: 10:31:16.148 - Service shut down complete
+10752: 20:25:07.281 - ---
+10752: 20:25:07.281 - Service: "Photon Socket Server" starting
+10752: 20:25:07.281 - Config File: C:\Users\Administrator\Desktop\GraduationProject\Git\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+10752: 20:25:07.282 - Will produce at most: 10 crash dumps
+10752: 20:25:07.282 - Service shutting down
+10752: 20:25:07.283 - Service shut down complete

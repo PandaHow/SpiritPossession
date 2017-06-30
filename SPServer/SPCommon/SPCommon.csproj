@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Code\OpAccount.cs" />
     <Compile Include="Code\OpCode.cs" />
+    <Compile Include="Code\OpPlayer.cs" />
     <Compile Include="Dto\AccountDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,9 +9,11 @@ namespace SPServer.Cache
     public class Caches
     {
         public static AccountCache Account;
+        public static PlayerCache Player;
         static Caches()
         {
             Account = new AccountCache();
+            Player = new PlayerCache();
         }
     }
 }

@@ -99,7 +99,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\GameTest\SpriteOutline.cs" />
     <Compile Include="Assets\Scripts\AccountView.cs" />
     <Compile Include="Assets\Scripts\Managers\Log.cs" />
     <Compile Include="Assets\Scripts\Managers\PhotonManager.cs" />

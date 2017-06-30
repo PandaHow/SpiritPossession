@@ -72,5 +72,15 @@ namespace SPServer.Cache
         }
         #endregion
 
+        //根据连接对象获取账号id 有就返回id 没有就返回-1
+        public int GetId(SPClient client)
+        {
+            if (!clientAccDict.ContainsKey(client))
+                return -1;
+            string account = clientAccDict[client];
+            if (!accModelDict.ContainsKey(account))
+                return -1;
+            return accModelDict[account].Id;
+         }
     }
 }
