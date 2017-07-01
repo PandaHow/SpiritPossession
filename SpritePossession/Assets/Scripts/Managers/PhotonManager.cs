@@ -23,6 +23,18 @@ public class PhotonManager : Singleton<PhotonManager>, IPhotonPeerListener
         }
     }
 
+    //角色
+    private PlayerReceiver player;
+    public PlayerReceiver Player
+    {
+        get
+        {
+            if (player == null)
+                player = FindObjectOfType<PlayerReceiver>();
+            return player;
+
+        }
+    }
     #endregion
 
     #region Photon接口
@@ -59,6 +71,9 @@ public class PhotonManager : Singleton<PhotonManager>, IPhotonPeerListener
         {
             case OpCode.AccountCode:
                 Account.OnReceive(subCode, response);
+                break;
+            case OpCode.PlayerCode:
+                Player.OnReceive(subCode, response);
                 break;
             default:
                 break;

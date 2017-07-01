@@ -1,4 +1,5 @@
-﻿using SPServer.Model;
+﻿using ExitGames.Threading;
+using SPServer.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace SPServer.Cache
 
         // 账号和模型的映射
 
-        private Dictionary<string, AccountModel> accModelDict = new Dictionary<string, AccountModel>();
+        private SynchronizedDictionary<string, AccountModel> accModelDict = new SynchronizedDictionary<string, AccountModel>();
 
         //匹配账号密码是否存在且正确
         public bool Match(string acc, string pwd)
@@ -46,12 +47,14 @@ namespace SPServer.Cache
         #endregion
 
         #region 在线玩家
-        private Dictionary< SPClient, string> clientAccDict = new Dictionary<SPClient, string>();
+        private SynchronizedDictionary < SPClient, string> clientAccDict = new SynchronizedDictionary<SPClient, string>();
+        //双向映射 访问起来比较容易 添加和删除需要两个都做
+        private SynchronizedDictionary<string, SPClient> accClientDict = new SynchronizedDictionary<string, SPClient>();
 
         //是否在线
         public bool IsOnline(string acc)
         {
-            return clientAccDict.ContainsValue(acc);
+            return accClientDict.ContainsKey(acc);
         }
 
         //添加在线关系(上线）
@@ -60,6 +63,7 @@ namespace SPServer.Cache
             if (IsOnline(acc))
                 return false;
             clientAccDict[client] = acc;
+            accClientDict[acc] = client;
             return true;
 
         }
@@ -67,7 +71,13 @@ namespace SPServer.Cache
         //下线
         public void Offline(SPClient client)
         {
-            if(clientAccDict.ContainsKey(client))
+
+            string acc = clientAccDict[client];
+            //注意移除顺序
+            if (accClientDict.ContainsKey(acc))
+                accClientDict.Remove(acc);
+
+            if (clientAccDict.ContainsKey(client))
                 clientAccDict.Remove(client);
         }
         #endregion

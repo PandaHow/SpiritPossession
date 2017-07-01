@@ -14,6 +14,7 @@ public class AccountReceiver : MonoBehaviour, IReceiver
     [SerializeField]
     private GameObject UIMain;
 
+
     public void OnReceive(byte subCode, OperationResponse response)
     {
         switch (subCode)
@@ -39,6 +40,7 @@ public class AccountReceiver : MonoBehaviour, IReceiver
                 //成功 进入下一个UI
                 ShowUI(UIMain);
                 HideUI(UIAccount);
+                //向服务器获取角色信息
                 PhotonManager.Instance.Request(OpCode.PlayerCode, OpPlayer.GetInfo);
                 break;
             case -1:
@@ -80,7 +82,7 @@ public class AccountReceiver : MonoBehaviour, IReceiver
     private void ShowUI(GameObject ob)
     {
         if (ob.GetComponent<CanvasGroup>())
-        {
+        {//需要给父物体的canvas添加canvasgroup组件
             ob.GetComponent<CanvasGroup>().alpha = 1;
             ob.GetComponent<CanvasGroup>().interactable = true;
             ob.GetComponent<CanvasGroup>().blocksRaycasts = true;
